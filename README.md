@@ -57,6 +57,6 @@ Configure Remote Desktop on the client machine to allow domain users to connect.
 
 </p>
 <p>
-This process involves managing account lockouts, enabling and disabling accounts, and reviewing logs. A previously created user account is selected, and multiple failed login attempts with an incorrect password are made to trigger a lockout based on the configured Group Policy threshold. Once the account is locked, it is unlocked in Active Directory, the password is reset, and a successful login is performed. The account is then disabled, and an attempted login demonstrates the expected error message. Finally, the account is re-enabled, access is restored, and the logs on both the Domain Controller and the client machine are reviewed to confirm the recorded events.
+This process involves managing account lockouts, enabling and disabling accounts, and reviewing logs. Select a previously created user account, and attempt to login with an incorrect password mulitple times which triggers a lockout based on the configured Group Policy threshold. Once the account is locked, unlock the account in Active Directory, the password is reset, and a successful login is performed. Next disable the account, and an attempt to login demonstrates the expected error message. Finally, the account is re-enabled, access is restored, and the logs on both the Domain Controller and the client machine are reviewed to confirm the recorded events.
 </p>
 <br />
